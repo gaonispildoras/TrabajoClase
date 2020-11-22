@@ -10,12 +10,13 @@ $superheroes = array(
         "email" => "clarkkent@mail.com",
     ),
     "iron-man" => array(
-        "name" => "Harry Potter",
-        "email" => "harrypotter@mail.com",
+        "name" => "Tony Stark",
+        "email" => "TonyStark@mail.com",
     )
 );
  
 // Printing all the keys and values one by one
+echo $superheroes[0][1];
 $keys = array_keys($superheroes);
 print_r($superheroes);
 
@@ -27,5 +28,7 @@ for($i = 0; $i < count($superheroes); $i++) {
 
     }
    echo "}<br>";
+
+
 }
 ?>

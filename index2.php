@@ -18,13 +18,9 @@ switch($_POST["boton"]){
             }
             else{
                 include("inc/proceso.php");
-
             }
-
-
-
 
 }
 
 include("inc/pie.php");
-?> 
+?>

@@ -39,17 +39,12 @@ switch($_GET["donde"]){
     break;
 
     default:
-        echo "Estás en $_GET[donde]<br/>";
+        echo "Estás en la calle <br/>";
             foreach($calle as $valor => $indice){
                 echo "<a href='$_SERVER[PHP_SELF]?donde=$valor'>$indice</a>";
             }
     break;
 
 }
-
-
-
-
-
 
 ?>
