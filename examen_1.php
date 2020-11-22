@@ -40,7 +40,7 @@ foreach($array as $valor){
 }
 ?>
 
-<h1>La fumada de PedroPa</h1>
+<h1>Ejercicio 1</h1>
 
 <form action="<?php $_SERVER['PHP_SELF'];?>" method="post">
 <textarea name="texto" id="" cols="30" rows="10"><?php echo $texto;?> </textarea><br><br>
