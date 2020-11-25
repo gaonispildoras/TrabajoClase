@@ -3,7 +3,7 @@ error_reporting(0);
 $numero=$_POST["numero"];
 
 
-if(preg_match("/[0-9]/" , $numero["numero1"])){
+if(preg_match("/([0-9])/" , $numero["numero1"])){
     $error1="Está bien";
 }
 else{

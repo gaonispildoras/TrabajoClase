@@ -21,6 +21,7 @@ error_reporting(0);
 $texto=$_POST["texto"];
 $palabra1=$_POST["palabra1"];
 $palabra2=$_POST["palabra2"];
+/*
 $array=preg_split("/[\s]+/", $texto);
 
 
@@ -38,6 +39,12 @@ foreach($array as $valor){
     }
 
 }
+$f2=preg_replace('#([0-9]{1,2}/([0-9]{1,2}/([0-9]{4}#', "\2/\1/\3",$fecha);
+*/
+
+$texto2=preg_replace("/$_POST[palabra1]/", "<b>$_POST[palabra1]</b>", $texto);
+$texto2=preg_replace("/$_POST[palabra2]/", "<span class='estilo1'>$_POST[palabra2]</span>", $texto2);
+echo $texto2;
 ?>
 
 <h1>Ejercicio 1</h1>
