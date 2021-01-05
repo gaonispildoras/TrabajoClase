@@ -22,9 +22,12 @@ $query=mysqli_query($conexion, $sql);
 <body>
 <script>
     $(function(){
+        var input=$(".valor").val();
+        alert(input);
         $(".input").hide();
             $(".td").click(function(){
                 $(".input").show();
+                $(".valor").show();
 
             });
 
@@ -41,8 +44,8 @@ $query=mysqli_query($conexion, $sql);
             while($array=mysqli_fetch_array($query)){
                 ?>
                     <tr>
-                        <td><input type="text" value="<?php echo $array["idviaje"];?>"></td>
-                        <td><input type="text" value="<?php echo $array["nombre_viaje"];?>"></td>
+                        <td><input type="text" class="valor" value="<?php echo $array["idviaje"];?>"></td>
+                        <td><input type="text" class="valor" value="<?php echo $array["nombre_viaje"];?>"></td>
                     </tr>    
         <?php
             }
