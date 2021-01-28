@@ -58,8 +58,7 @@ $abrir2=opendir($dir2);
 <?php
 $dir3="../carpeta_archivos";
 $abrir3=opendir($dir3);
-$archivo=$_POST["hola"];
-echo $archivo;
+$archivo=$_POST["hola"]["name"];
 unlink($archivo);
 ?>
 
